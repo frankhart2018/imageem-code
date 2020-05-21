@@ -15,8 +15,8 @@ import argparse
 # Instantiate command line argument parser
 # =============================================================================
 parser = argparse.ArgumentParser()
-parser.add_argument("--training", help="Path to training dataset", default="dataset/training_set")
-parser.add_argument("--testing", help="Path to testing dataset", default="dataset/test_set")
+parser.add_argument("--training", help="Path to training dataset", default="../demos/cat-and-dog/dataset/training_set")
+parser.add_argument("--testing", help="Path to testing dataset", default="../demos/cat-and-dog/dataset/test_set")
 parser.add_argument("--imageem", help="Name of file to save imageem embeddings in")
 args = parser.parse_args()
 
