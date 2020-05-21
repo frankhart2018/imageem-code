@@ -77,7 +77,7 @@ class Autoencoder(nn.Module):
 # =============================================================================
 # Instantiate model and set model hyperparameters
 # =============================================================================
-num_epochs = 5
+num_epochs = 50
 learning_rate = 1e-5
 
 model = Autoencoder()
@@ -99,7 +99,7 @@ for epoch in range(num_epochs):
         loss.backward()
         optimizer.step()
     # ===================log========================
-    print('epoch [{}/{}], loss:{:.4f}'.format(epoch+1, num_epochs, loss.data()))
+    print('epoch [{}/{}], loss:{:.4f}'.format(epoch+1, num_epochs, loss.item()))
 
 # =============================================================================
 # Save the imageem vector
