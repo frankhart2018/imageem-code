@@ -16,7 +16,6 @@ parser.add_argument("--cat_path", help="Path to training set of cat images", def
 parser.add_argument("--dog_path", help="Path to training set of dog images", default="../demos/cat-and-dog/dataset/training_set/dogs/")
 parser.add_argument("--cat-file", help="Path to where cat dataset should be saved", default="cat_data.csv")
 parser.add_argument("--dog-file", help="Path to where dog dataset should be saved", default="dog_data.csv")
-parser.add_argument("--imageem", help="Name of file to save imageem embeddings in")
 args = parser.parse_args()
 
 # =============================================================================
